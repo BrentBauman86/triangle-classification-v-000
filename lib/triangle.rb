@@ -9,9 +9,9 @@ class Triangle
   end
 
   def kind
-    # :equilateral
-    # :isosceles
-    # :scalene
+    :equilateral
+    :isosceles
+    :scalene
   end
 
   class TriangleError < StandardError
