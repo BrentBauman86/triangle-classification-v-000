@@ -34,7 +34,7 @@ class Triangle
 
   class TriangleError < StandardError
     def message
-    puts "Not a triangle"
+      puts "Not a triangle"
     end
   end
 end
