@@ -9,7 +9,6 @@ class Triangle
   end
 
   def kind
-
     if s1 * s2 * s3 == 0 || s1 + s2 <= s3 || s2 + s3 <= s1 || s3 + s1 <= s2
       begin
         raise TriangleError
