@@ -9,9 +9,9 @@ class Triangle
   end
 
   def kind
-    :equilateral
-    :isosceles
-    :scalene
+    # :equilateral
+    # :isosceles
+    # :scalene
 
     if s1 * s2 * s3 == 0 || s1 + s2 <= s3 || s2 + s3 <= s1 || s3 + s1 <= s2
       begin
