@@ -20,9 +20,15 @@ class Triangle
 
         begin
         raise TriangleError
-        puts error.message 
-      end 
+        puts error.message
+      end
+      elsif
+        s1 == s2 && s1 == s3
+        self.kind = :equilateral
+
       elsif 
+        s1 == s2 && s1 != s3
+        
     end
   end
   end
