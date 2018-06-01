@@ -18,6 +18,11 @@ class Triangle
     def message
       if @s1 * @s2 * @s3 == 0 || @s1 + @s2 <= @s3 || @s2 + @s3 <= @s1 || @s3 + @s1 <= @s2
 
+        begin
+        raise TriangleError
+        puts error.message 
+      end 
+      elsif 
     end
   end
   end
