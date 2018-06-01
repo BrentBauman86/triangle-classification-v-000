@@ -18,5 +18,6 @@ class Triangle
     def message
       if @s1 + @s2 <= @s3 || @s2 + @s3 <= @s1 || @s3 + @s1 <= @s2
     end
+  end 
   end
 end
