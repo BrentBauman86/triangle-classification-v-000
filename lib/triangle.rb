@@ -1,6 +1,6 @@
 class Triangle
 
-  attr_accessor :s1, :s2, :s3
+  attr_accessor :s1, :s2, :s3, :kind 
 
   def initialize(s1, s2, s3)
     @s1 = s1
@@ -28,12 +28,14 @@ class Triangle
         self.kind = :isosceles
 
       else
-
+        self.kind = :scalene
 
     end
   end
 end
 
 class TriangleError < StandardError
+  def method
+    puts "Not a triangle"
 end
 end
