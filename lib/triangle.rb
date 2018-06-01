@@ -13,12 +13,12 @@ class Triangle
     :isosceles
     :scalene
 
-      if s1 * s2 * s3 == 0 || s1 + s2 <= s3 || s2 + s3 <= s1 || s3 + s1 <= s2
-
-        begin
+    if s1 * s2 * s3 == 0 || s1 + s2 <= s3 || s2 + s3 <= s1 || s3 + s1 <= s2
+      begin
         raise TriangleError
         puts error.message
       end
+
       elsif
         s1 == s2 && s1 == s3
         self.kind = :equilateral
@@ -29,13 +29,12 @@ class Triangle
 
       else
         self.kind = :scalene
-
     end
   end
 end
 
-class TriangleError < StandardError
-  def method
+  class TriangleError < StandardError
+    def method
     puts "Not a triangle"
-end
+  end
 end
