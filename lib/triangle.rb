@@ -16,9 +16,7 @@ class Triangle
 
   class TriangleError < StandardError
     def message
-
+      if s1 != s2 && s3
     end
   end
-
-
 end
