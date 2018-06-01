@@ -1,6 +1,6 @@
 class Triangle
 
-  attr_accessor :s1, :s2, :s3, :kind
+  attr_accessor :s1, :s2, :s3
 
   def initialize(s1, s2, s3)
     @s1 = s1
@@ -9,9 +9,9 @@ class Triangle
   end
 
   def kind
-    # :equilateral
-    # :isosceles
-    # :scalene
+    :equilateral
+    :isosceles
+    :scalene
 
     if s1 * s2 * s3 == 0 || s1 + s2 <= s3 || s2 + s3 <= s1 || s3 + s1 <= s2
       begin
