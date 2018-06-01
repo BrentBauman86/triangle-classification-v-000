@@ -14,8 +14,7 @@ class Triangle
     :scalene
   end
 
-  class TriangleError < StandardError
-    def message
+
       if s1 * s2 * s3 == 0 || s1 + s2 <= s3 || s2 + s3 <= s1 || s3 + s1 <= s2
 
         begin
@@ -35,5 +34,7 @@ class Triangle
 
     end
   end
-  end
+
+class TriangleError < StandardError
+end
 end
